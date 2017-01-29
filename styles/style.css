@@ -1,3 +1,19 @@
+/*************/
+/*Positioning*/
+/*************/
+
+  /*Fix Nav Bar padding*/
+  .container-fluid {
+    padding: 0px;
+  }
+
+  .content-wrapper {
+  height: 91vh;
+  display: flex;
+  }
+
+
+/*Navbar Styling*/
 
 .navbar-default .navbar-brand {
   color: black;
@@ -18,19 +34,11 @@
 
 
 
-.main-wrapper {
-  height: 100vh;
-  display: flex;
-
-}
-
 .main-content {
   background-color: #FEFAC0;
 }
 
 
 .sidebar {
-  /*display: flex;*/
-  /*height: 100%;*/
   background-color: #4DD7FA;
 }

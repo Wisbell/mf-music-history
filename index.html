@@ -8,9 +8,10 @@
 </head>
 <body ng-app="musicHistoryApp">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-default navbar-style">
-    <div class="container-fluid">
+  <div class="container-fluid">
+
+     <nav class="row navbar navbar-default navbar-style">
+
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Music History</a>
       </div>
@@ -19,23 +20,29 @@
         <li class="navbar-button-style"><a href="#/">Add Music</a></li>
         <li class="navbar-button-style"><a href="#/">Profile</a></li>
       </ul>
-    </div>
+
   </nav>
 
-  <!-- Main wrapper -->
-<!--   <div class="container-fluid main-wrapper"> -->
-    <div class="row main-wrapper">
-      <!-- Side Bar -->
-      <div class="col-md-2 sidebar">
-        Testing Sidebar
+    <div class="row content-wrapper">
+      <section class="sidebar col-md-3">
+        Sidebar
 
-      </div>
+      </section>
 
-      <!-- Views show up here -->
-      <div class="col-md-10 main-content" ng-view></div>
 
-    </div> <!-- Close div row -->
-  <!-- </div> --> <!-- Close container fluid div-->
+      <section class="main-content col-md-9">
+        main content
+
+      </section>
+
+    </div>
+
+
+
+  </div>
+
+
+
 
   <!-- Dependencies -->
   <script src="lib/angular/angular.min.js"></script>
