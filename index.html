@@ -8,22 +8,34 @@
 </head>
 <body ng-app="musicHistoryApp">
 
-  <!-- Make a Nav -->
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Music History</a>
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-style">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Music History</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="navbar-button-style"><a href="#/">View Music</a></li>
+        <li class="navbar-button-style"><a href="#/">Add Music</a></li>
+        <li class="navbar-button-style"><a href="#/">Profile</a></li>
+      </ul>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#/doctors">Test</a></li>
-      <li class="active"><a href="#/doctors">Test</a></li>
-    </ul>
-  </div>
-</nav>
+  </nav>
 
-  <!-- Views show up here -->
-  <div ng-view></div>
+  <!-- Main wrapper -->
+<!--   <div class="container-fluid main-wrapper"> -->
+    <div class="row main-wrapper">
+      <!-- Side Bar -->
+      <div class="col-md-2 sidebar">
+        Testing Sidebar
 
+      </div>
+
+      <!-- Views show up here -->
+      <div class="col-md-10 main-content" ng-view></div>
+
+    </div> <!-- Close div row -->
+  <!-- </div> --> <!-- Close container fluid div-->
 
   <!-- Dependencies -->
   <script src="lib/angular/angular.min.js"></script>
@@ -32,6 +44,11 @@
   <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- App configuration -->
   <script src="app/app.js"></script>
+  <!-- Factories -->
+  <script src="app/factories/songFactory.js"></script>
+  <!-- Controllers -->
+  <script src="app/controllers/songDetailsController.js"></script>
+  <script src="app/controllers/songListController.js"></script>
 
 </body>
 </html>

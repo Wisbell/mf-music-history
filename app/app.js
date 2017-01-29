@@ -1,7 +1,7 @@
 console.log("app.js loaded")
 
 
-var app = angular.module('doctorsApp', ['ngRoute'])
+var app = angular.module('musicHistoryApp', ['ngRoute'])
 
 app.config(function($routeProvider, $locationProvider){
   $locationProvider.hashPrefix('')
