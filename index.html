@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music History with Angular</title>
+  <link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body ng-app="musicHistoryApp">
+
+  <!-- Make a Nav -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Music History</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#/doctors">Test</a></li>
+      <li class="active"><a href="#/doctors">Test</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <!-- Views show up here -->
+  <div ng-view></div>
+
+
+  <!-- Dependencies -->
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/angular-route/angular-route.min.js"></script>
+  <script src="lib/jquery/dist/jquery.min.js"></script>
+  <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- App configuration -->
+  <script src="app/app.js"></script>
+
+</body>
+</html>
