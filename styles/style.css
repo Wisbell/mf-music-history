@@ -8,10 +8,23 @@
   }
 
   .content-wrapper {
-  height: 91vh;
-  display: flex;
+    height: 91vh;
+    display: flex;
   }
 
+  .sidebar {
+    padding-top: 1em;
+    padding-left: 2em;
+  }
+
+  .sidebar-genre {
+    display: flex;
+  }
+
+  .sidebar-genre > div {
+    width: 50%;
+    padding: 1em;
+  }
 
 /*Navbar Styling*/
 

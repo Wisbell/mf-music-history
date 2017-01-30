@@ -10,7 +10,7 @@
 
   <div class="container-fluid">
 
-     <nav class="row navbar navbar-default navbar-style">
+     <nav class="navbar navbar-default navbar-style">
 
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Music History</a>
@@ -27,11 +27,48 @@
       <section class="sidebar col-md-3">
         Sidebar
 
+        <!-- Song Length Div -->
+        <div>
+          Song Length:
+          <input type="range">
+        </div>
+        <!-- Artist Div -->
+        <div>
+          Arist:
+          <select>
+            <option>Options</option>
+          </select>
+        </div>
+        <!-- Album Div -->
+        <div>
+          Album:
+          <select>
+            <option>Options</option>
+          </select>
+        </div>
+        <!-- Genre Div -->
+        <div class="sidebar-genre">
+          Genre:
+
+          <!-- Left Side -->
+          <div class="sidebar-genre-left">
+            <input type="checkbox"> Rock <br>
+            <input type="checkbox"> Pop <br>
+            <input type="checkbox"> Blues <br>
+          </div>
+          <!-- Right Side -->
+          <div class="sidebar-genre-right">
+            <input type="checkbox"> Classical <br>
+            <input type="checkbox"> Jazz <br>
+            <input type="checkbox"> Hip Hop <br>
+          </div>
+        </div>
+        <!-- Filter Button Div? -->
       </section>
 
 
       <section class="main-content col-md-9">
-        main content
+        <div ng-view></div>
 
       </section>
 
