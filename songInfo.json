@@ -1,0 +1,31 @@
+{
+    "songs": {
+        "crazy_id1": {
+            "song_name": "crazy song name"
+        }
+    },
+    "artist": {
+        "super_crazy_id1": {
+            "name": "test_artist"
+        }
+    },
+    "album": {
+        "woah_crazy_id": {
+            "name": "test_album"
+        }
+    },
+    "user": {
+        "super_user1": {
+            "name": "billy"
+        }
+    },
+    "playlist": {
+        "cool_playlist1": {
+            "name": "coolest playest ever",
+            "song_list": {
+                "song1": "crazy_song_id1",
+                "song2": "crazy_song_id2"
+            }
+        }
+    }
+}

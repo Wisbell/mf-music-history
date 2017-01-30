@@ -1,4 +1,4 @@
-app.controller('SongListCtrl', function($scope, DoctorFactory){
+app.controller('SongListCtrl', function($scope, SongFactory){
   console.log("Song List controller")
 
   // DoctorFactory.getDoctorList()

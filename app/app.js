@@ -11,9 +11,21 @@ app.config(function($routeProvider, $locationProvider){
       controller: 'SongListCtrl',
       templateUrl: 'partials/song-list.html'
     })
-    .when('/song-detail', {
+    .when('/view-music/:someSong', {
       controller: 'SongDetailCtrl',
       templateUrl: 'partials/song-details.html'
+    })
+    .when('/view-music', {
+      controller: 'SongDetailCtrl',
+      templateUrl: 'partials/song-list.html'
+    })
+    .when('/add-music', {
+      controller: '',
+      templateUrl: 'partials/addMusic.html'
+    })
+    .when('/profile', {
+      controller: '',
+      templateUrl: 'partials/profile.html'
     })
     .otherwise({
       redirectTo: '/'
