@@ -7,6 +7,10 @@ app.factory('SongFactory', function($http){
                   console.log("val", val)
                   return val.data
               })
+            },
+
+            addNewSong: function(newSong){
+              $http.post('https://west-music-history.firebaseio.com/.json', JSON.stringify(newSong))
             }
           }
 })
