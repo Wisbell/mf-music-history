@@ -55,3 +55,9 @@
 .sidebar {
   background-color: #4DD7FA;
 }
+
+.songDiv {
+  border: solid 1px black;
+  margin-bottom: 1em;
+  width: 70%
+}

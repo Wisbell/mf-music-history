@@ -16,7 +16,7 @@ app.config(function($routeProvider, $locationProvider){
       templateUrl: 'partials/song-details.html'
     })
     .when('/view-music', {
-      controller: 'SongDetailCtrl',
+      controller: 'SongListCtrl',
       templateUrl: 'partials/song-list.html'
     })
     .when('/add-music', {

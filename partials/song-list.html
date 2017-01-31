@@ -1,9 +1,6 @@
-<h1>Song List Partial</h1>
+<h1>Best Song List Ever</h1>
 
-list all the songs in the database
-
-or maybe first 5
-
-
-SONG NAME
-arist name - album name- genre??
+<div class="songDiv" ng-repeat="song in songList">
+  <p>{{song.name}}</p>
+  <p>Artist: {{song.artist}} Album: {{song.album}}</p>
+</div>
